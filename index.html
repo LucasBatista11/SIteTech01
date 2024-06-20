@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Figma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!----------------------->
+    <!------Page Loader------>
+    <!----------------------->
+    <div id="preloader">
+        <div id="status">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!----------------------->
+    <!--Off Canvas Mobile---->
+    <!----------------------->
+    <div class="offCanvas-wrap" id="offCanvas-wrap">
+        <div class="offCanvas" id="offcanvas">
+                <h1 onclick="toggleClass()">X</h1>
+                <ul class="navOffCanvas">
+                    <li style="color: #8f96cb; ">Home</li>
+                    <li>Sobre</li>
+                    <li>Serviços</li>
+                    <li>História</li>
+                    <li>Diferenciais.</li>
+                    <button>COMEÇE A SUA JORNADA</button>
+                </ul>
+        </div>
+    </div>
+
+    <div class="wrap1">
+        <div class="sec1">
+            <div class="filter"> </div>
+            <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
+                <source src="imagens/video_figma_project.mp4" type="video/mp4">
+                </video> 
+
+                <!----------------------->
+                <!----Header Mobile------>
+                <!----------------------->
+                <header class="header-mobile drop-top">
+                    <img class="logo-mobile" src="imagens/LOG- V.svg" alt="Logo">
+                    <img class="menu-icon" src="imagens/menu-icon.svg" alt="menu" onclick="toggleClass()">
+                </header>
+
+                <!----------------------->
+                <!----Header Desktop------>
+                <!----------------------->
+            <header class="header drop-top">
+                <img src="imagens/LOG- V.svg" alt="Logo">
+
+                <nav>
+                    <ul>
+                        <li style="border-bottom: 2px solid #ffffff; ">Home</li>
+                        <li>Sobre</li>
+                        <li>Serviços</li>
+                        <li>História</li>
+                        <li>Diferenciais</li>
+                    </ul>
+                </nav>
+
+                <button>COMEÇE A SUA JORNADA</button>
+            </header>
+            <!------>
+
+            <div class="ajuda drop-left" style="z-index: 1;">
+                <img src="imagens/Especialista.png" alt="Especialista">
+                <h3>Falar com um<br>Especialista</h3>
+            </div>
+            <!------->
+
+            <div class="sec1-bottom" style="z-index: 1;">
+
+                <div class="left">
+                    <div style="overflow: hidden;"><h1 class="drop-up">Desbloqueie seu<br>potencial e crie mais.</h1></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <button class="faleconosco-button">
+                        Fale Conosco
+                        <div class="icon">
+                          <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+
+                </div>
+
+
+                <div class="right" style="z-index: 1;">
+
+                    <div class="verVideo drop-right">
+                        <h3>Ver Vídeo</h3>
+                        <img src="imagens/circleMulher.png" alt="circleMulher">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" type="text/javascript"></script>
+    <script src="pageLoader.js"></script>
+</body>
+</html>

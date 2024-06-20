@@ -1,0 +1,490 @@
+@font-face{
+    font-family: Clash Grotesk;
+
+    src: url("fontes/ClashGrotesk-Bold.eot");
+}
+
+body{
+    background-color: white;
+    margin: auto;
+    font-family: Inter, Arial;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*-----Sessão 1 Wrap-------*/
+.wrap1{
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1.2%;
+}
+
+/*-----Sessão-------*/
+.sec1{
+    width: 100%;
+    background-color: rgb(142, 185, 255);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden !important;
+    padding: 2%;
+    position: relative;
+    flex-direction: column;
+}
+
+.sec1 > .filter{ /*filtro do vídeo*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #867fdf;
+    mix-blend-mode: soft-light;
+}
+
+/*-----Primeira sessão do site-------*/
+.sec1 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: hue-rotate(20deg);
+}
+
+/*-----Header-------*/
+
+@media(width<1024px){ /*escondendo header no mobile*/
+    .header{
+        display: none;
+    }
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+header > img{
+    width: 5vw;
+}
+
+header > nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14%;
+    color: white;
+    font-family: Inter, Arial;
+    font-size: 1vw;
+}
+
+ul > li{
+    cursor: pointer;
+}
+
+header > button{
+    font-family: Inter;
+    padding: 0.7% 1.1% 0.7% 1.1%;
+    background-color: #545376;
+    color: white;
+    border-radius: 3000px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+/*-----Falar com um Especialista-------*/
+.ajuda{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1%;
+    margin-top: 3%;
+}
+
+.ajuda > img{
+    width: 4vw;
+}
+
+.ajuda > h3{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+/*-----Parte de baixo da primera sessão-------*/
+.sec1-bottom{
+    height: -webkit-fill-available;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec1-bottom > .left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+    width: 44%;
+
+    & h1{
+        color: white;
+        font-size: 3.8vw;
+        font-weight: 500;
+        margin:0;
+        font-family: Clash Grotesk;
+    }
+
+    & p{
+        color: white;
+        font-size: 1vw;
+        margin: 0;
+    }
+}
+
+/*Botão Fale Conosco*/
+.faleconosco-button {
+    background: #545376;
+    color: white;
+    font-family: inherit;
+    padding-left: 1.2em;
+    font-size: 0.9vw;
+    font-weight: 500;
+    border-radius: 4000px;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    width: 26%;
+    padding-right: 3.3em;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  
+  .faleconosco-button .icon {
+    background: #8E8EED;
+    margin-left: 0.4em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 5000px;
+    box-shadow: #8E8EED;
+    right: 0.3em;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .faleconosco-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .faleconosco-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #FFFFFF;
+  }
+  
+  .v:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .faleconosco-button:active .icon {
+    transform: scale(0.95);
+  }
+  /*------Final Botão fale Conosco-------*/ 
+
+
+.right{
+    height: -webkit-fill-available;
+    display: flex;
+    width: 56%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.right > .verVideo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0%;
+    color: #545376;
+    width: 24%;
+    background-color: white;
+    padding: 01%;
+    border-radius: 5000px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    & img{
+        width: 3.4vw;
+    }
+
+    & h3{
+        margin-left: 16%;
+        font-weight: 600;
+        font-size: 1.1vw;
+        cursor: pointer;
+    }
+}
+
+/*----------------------*/
+/*-------MOBILE---------*/
+/*----------------------*/
+@media(width>1024px) {  /*esconder header e OffCanvas mobile no desktop, deixa apenas no tablet e mobile*/
+    .header-mobile{
+        display: none;
+    }
+
+    .offCanvas{
+        display: none;
+    }
+}
+
+.header-mobile{  /*Header*/
+    & .menu-icon{
+        width: 14vw;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    & .logo-mobile{
+        width: 10vw;
+    }
+}
+/*-----------*/
+
+@media(width<567px){
+    .sec1{
+        padding: 4%;
+    }
+
+    .ajuda{
+        margin-top: 8%;
+    }
+
+    .ajuda > img{
+        width: 11vw;
+    }
+    
+    .ajuda > h3{
+        font-size: 2.4vw;
+    }
+
+    .sec1-bottom{
+        flex-direction: column;
+    }
+
+    .sec1-bottom > .left{
+        width: 100%;
+        gap: 3.2vw;
+        margin-top: 25%;
+
+        & h1{
+            font-size: 8vw;
+            line-height: 9vw;
+        }
+
+        & p{
+            font-size: 3vw;
+        }
+    }
+
+    .faleconosco-button {
+        font-size: 3vw;
+        width: 39%;
+    }
+
+    .right > .verVideo{
+        color: #545376;
+        width: 70%;
+
+        & img{
+            width: 12vw;
+        }
+
+        & h3{
+            font-size: 3vw;
+        }
+
+    }
+
+}
+
+@media (width < 1024px) { /*Ajuste Off-canvas Tablet e Mobile*/
+    .offCanvas-wrap{
+        width: 100vw;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
+        display: flex;
+        align-items: center;
+        z-index: 5;
+        left: -100vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .offCanvas-wrap-view{
+        width: 100vw;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.225);
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        z-index: 5;
+        left: 0vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .offCanvas{ /*off canvas escondido*/
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        left: -100vw;
+
+        & h1{
+            position: absolute;
+            font-family: Clash Grotesk;
+            font-weight: 400;
+            font-size: 8vw;
+            margin: 0;
+            top: 1vw;
+            right: 3vw;
+            cursor: pointer;
+            color: #ffffff;
+        }
+    }
+    
+    .navOffCanvas{
+        font-family: Clash Grotesk;
+        font-weight: 500;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        font-size: 8vw;
+        color: #494865;
+    
+        & button{
+            font-family: Clash Grotesk;
+            padding: 3% 1.5% 3% 1.5%;
+            background-color: #545376;
+            color: white;
+            border-radius: 3000px;
+            border: none;
+            cursor: pointer;
+            font-size: 3vw;
+            box-shadow: rgba(0, 0, 0, 0.238) 0px 5px 15px;
+        }
+    }
+}
+/*-------Page Loader------*/
+    #loader {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #b33232;
+      transition: opacity 0.6s;
+      z-index:300;
+    }
+/*-------------------------*/
+
+/*------Animações de Entrada-------*/
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+       }
+       to {
+        opacity: 1;
+        transform: translate(0px);
+       }
+}
+
+.drop-up{
+    animation: slideFromBottom 1.4s ease 200ms backwards;
+    animation-delay: 3100ms;
+   }
+
+
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+       }
+       to {
+        opacity: 1;
+        transform: translate(0px);
+       }
+}
+
+.drop-top{
+    animation: slideFromTop 1.4s ease 200ms backwards;
+    animation-delay: 3100ms;
+   }
+
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+       }
+       to {
+        opacity: 1;
+        transform: translate(0px);
+       }
+}
+
+.drop-left{
+    animation: slideFromLeft 1.4s ease 200ms backwards;
+    animation-delay: 3100ms;
+   }
+
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+       }
+       to {
+        opacity: 1;
+        transform: translate(0px);
+       }
+}
+
+.drop-right{
+    animation: slideFromRight 1.4s ease 200ms backwards;
+    animation-delay: 3100ms;
+   }
+/*---------Fim Animações de Entrada----------*/
