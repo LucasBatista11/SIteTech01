@@ -406,100 +406,91 @@ header > button{
     }
 }
 /*-------Page Loader------*/
-@media (width > 1024px) {
-    #loader {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #ffffff;
-      transition: opacity 0.6s;
-          z-index:300;
+    @media (width > 1024px) {
+        #loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        transition: opacity 0.6s;
+            z-index:300;
+        }
     }
-      }
-      
-      @media (width < 1024px) {
-          #loader{
-              display:none;
-          }	
-          
-          #lottie-loader{
-              display:none;
-          }
-      }
+
 /*-------------------------*/
 
 /*------Animações de Entrada-------*/
 
-@keyframes slideFromBottom {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-       }
-       to {
-        opacity: 1;
-        transform: translate(0px);
-       }
-}
+    @keyframes slideFromBottom {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
 
-.drop-up{
-    animation: slideFromBottom 1.4s ease 200ms backwards;
-    animation-delay: 3100ms;
-   }
-
-
-@keyframes slideFromTop {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-       }
-       to {
-        opacity: 1;
-        transform: translate(0px);
-       }
-}
-
-.drop-top{
-    animation: slideFromTop 1.4s ease 200ms backwards;
-    animation-delay: 3100ms;
-   }
+    .drop-up{
+        animation: slideFromBottom 1.4s ease 200ms backwards;
+        animation-delay: 3100ms;
+    }
 
 
-@keyframes slideFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-       }
-       to {
-        opacity: 1;
-        transform: translate(0px);
-       }
-}
+    @keyframes slideFromTop {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
 
-.drop-left{
-    animation: slideFromLeft 1.4s ease 200ms backwards;
-    animation-delay: 3100ms;
-   }
+    .drop-top{
+        animation: slideFromTop 1.4s ease 200ms backwards;
+        animation-delay: 3100ms;
+    }
 
 
-@keyframes slideFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-       }
-       to {
-        opacity: 1;
-        transform: translate(0px);
-       }
-}
+    @keyframes slideFromLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
 
-.drop-right{
-    animation: slideFromRight 1.4s ease 200ms backwards;
-    animation-delay: 3100ms;
-   }
+    .drop-left{
+        animation: slideFromLeft 1.4s ease 200ms backwards;
+        animation-delay: 3100ms;
+    }
+
+
+    @keyframes slideFromRight {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
+
+    .drop-right{
+        animation: slideFromRight 1.4s ease 200ms backwards;
+        animation-delay: 3100ms;
+    }
 /*---------Fim Animações de Entrada----------*/
