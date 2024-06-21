@@ -406,6 +406,7 @@ header > button{
     }
 }
 /*-------Page Loader------*/
+@media (width > 1024px) {
     #loader {
       position: fixed;
       top: 50%;
@@ -418,8 +419,19 @@ header > button{
       align-items: center;
       background-color: #ffffff;
       transition: opacity 0.6s;
-      z-index:300;
+          z-index:300;
     }
+      }
+      
+      @media (width < 1024px) {
+          #loader{
+              display:none;
+          }	
+          
+          #lottie-loader{
+              display:none;
+          }
+      }
 /*-------------------------*/
 
 /*------Animações de Entrada-------*/
